@@ -1,16 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
 public class DeadZone : MonoBehaviour
 {
-    private void onCollisionEnter2D(Collision2D collision){
-        Debug.Log("Collision");
+
+    public Text scorePlayerText;
+    public Text scoreEnemyText;
+
+    int scorePlayerQuantity=0;
+    int scoreEnemyQuantity=0;
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(gameObject.tag.Equals("Right")){
+            scorePlayerQuantity++;
+            UpdateScore(scorePlayerText, scorePlayerQuantity);
+            
+        } else if(gameObject.tag.Equals("Left")){
+            scoreEnemyQuantity++;
+            UpdateScore(scoreEnemyText, scoreEnemyQuantity);
+            
+        }
     }
 
-    private void onTriggerEnter2D(Collider2D collision){
-        Debug.Log("Trigger");
+    void UpdateScore(Text scoreText, int quantity){
+        scoreText.text = quantity.ToString(); 
     }
 }
