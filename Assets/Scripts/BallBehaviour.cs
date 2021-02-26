@@ -5,20 +5,22 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     public Transform paddle;
-    bool gameStarted = false;
+    public bool gameStarted = false;
     public Rigidbody2D rigidbodyBall;
+    float posDif = 0;
+    public AudioSource ballAudio;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        posDif = paddle.position.x - transform.position.x; 
     }
 
     // Update is called once per frame
     void Update()
     {
         if(!gameStarted){
-            float posDif = paddle.position.x - transform.position.x; 
             transform.position = new Vector3(paddle.position.x - posDif, paddle.position.y, paddle.position.z);    
 
             //if user click
@@ -27,7 +29,10 @@ public class BallBehaviour : MonoBehaviour
                 gameStarted = true;
             }
         }
-        
-        
+    }
+
+    //Sound active if ball is collision
+    private void OnCollisionEnter2D(Collision2D collision){
+        ballAudio.Play();
     }
 }
