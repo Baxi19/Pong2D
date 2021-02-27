@@ -2,7 +2,7 @@
 
 ### Examples of game :fire: !!
 
-<div class="row">
+<div class="row" align="center">
   <img src="./Documentation/video1.gif" width="200" height="400" />
   <img src="./Documentation/video2.gif" width="200" height="400" />
 </div>
