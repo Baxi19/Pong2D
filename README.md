@@ -1,6 +1,6 @@
-# Pong 2D
+# Pong 2D :octocat:
 
-### :octocat: Ejemplos del juego :fire: !!
+### Ejemplos del juego :fire: !!
 
 <div class="row">
   <img src="./Documentation/video1.gif" width="200" height="400" />
