@@ -2,8 +2,7 @@
 
 ### :octocat: Ejemplos del juego :fire: !!
 
-![Imagen](./Documentation/video1.gif "Resultado al perder")
+<img src="./Documentation/video1.gif" width="200" height="400" />
 
-<img src="./Documentation/video1.gif" width="40" height="40" />
+<img src="./Documentation/video2.gif" width="200" height="400" />
 
-![Imagen](./Documentation/video2.gif "Resultado al ganar")
