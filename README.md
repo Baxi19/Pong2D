@@ -1,5 +1,7 @@
 # Pong 2D
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+### :octocat: Ejemplos del juego :fire: !!
 
 ![Imagen](./Documentation/video1.gif "Resultado al perder")
+
+![Imagen](./Documentation/video2.gif "Resultado al ganar")
